@@ -1,3 +1,1 @@
-import { getOptions } from './app/app';
-
-app();
+import { getOptions, testModel } from './app/app';
