@@ -14,9 +14,3 @@ module.exports = {
     }]
   }
 }
-
-
-// resolve: {
-//     alias: aliases,
-//     extensions: ['', '.js', '.jsx', '.es6.js']
-//   },
