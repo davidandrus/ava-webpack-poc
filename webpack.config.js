@@ -1,4 +1,6 @@
 var babelOptions = require('./webpack.babel');
+var aliases = require('./webpack.aliases');
+
 module.exports = {
   context: __dirname + "/src",
   entry: "./entry",
@@ -12,5 +14,8 @@ module.exports = {
       loader: 'babel',
       query: babelOptions
     }]
+  },
+  resolve: {
+    alias: aliases,
   }
 }
