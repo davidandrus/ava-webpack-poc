@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava --verbose",
+    "test": "BABEL_DISABLE_CACHE=1 ava --verbose",
     "watch:test": "npm run test -- --watch"
   },
   "ava": {
@@ -19,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^0.14.0",
     "babel": "^6.5.2",
     "babel-core": "^6.8.0",
     "babel-loader": "^6.2.4",

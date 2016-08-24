@@ -6,10 +6,10 @@ var aliasesArr = Object.keys(aliases).map(function(key) {
   };
 });
 
-require('babel-register')
-({
+require('babel-register')({
   "plugins": [
     ["module-alias", aliasesArr]
-  ]
+  ],
+  extensions: [".es6", ".es", ".jsx", ".js", ".es6.js"]
 });
 require('babel-polyfill');
