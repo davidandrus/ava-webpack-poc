@@ -1,10 +1,12 @@
-var aliases = require('./webpack.aliases.js');
+var aliases = require('./webpack/webpack.aliases.js');
 var aliasesArr = Object.keys(aliases).map(function(key) {
   return {
     src: aliases[key],
     expose: key,
   };
 });
+
+console.log(aliasesArr);
 
 require('babel-register')({
   "plugins": [

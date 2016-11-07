@@ -1,0 +1,2 @@
+window.angular = {}
+export window;

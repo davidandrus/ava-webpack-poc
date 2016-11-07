@@ -1,5 +1,5 @@
 import test from 'ava';
-import { getOptions, testTestModel } from './app';
+import { getOptions, testTestModel } from './app'; 
 
 test('this will just pass', t => {
   t.pass();

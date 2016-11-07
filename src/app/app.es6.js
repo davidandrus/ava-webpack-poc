@@ -7,3 +7,5 @@ export default {
     return testModel();
   }
 }
+
+console.log(window);
